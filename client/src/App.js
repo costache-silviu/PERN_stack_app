@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Login from "./pages/login/Login";
+
 import Sidebar from "./components/sidebar/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
@@ -12,6 +15,10 @@ import ProductList from "./pages/ProductList";
 const App = () => {
   return (
     <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
+
       <Sidebar>
         <Routes>
           <Route path="/" element={<Dashboard />} />

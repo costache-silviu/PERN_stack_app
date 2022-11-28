@@ -1,0 +1,27 @@
+.custom-input-field {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 2rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: #0c0d0d;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.custom-input-field:focus {
+  display: inline-block;
+  box-shadow: 0 0 0 0.1rem #0c0d0d;
+  backdrop-filter: blur(12rem);
+  border-radius: 1rem;
+}
+
+.custom-input-field::placeholder {
+  color: #0c0d0d;
+  font-weight: 100;
+  font-size: 1rem;
+}
